@@ -1,187 +1,264 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	<title>DogMar - Galería del predio y guarderia</title>
-	<meta name="description" content="DogMar Hospedaje y refugio para perros y gatos. Conoce nuestro predio y Guardería. Galeria de fotos. Mascotas Adoptadas">
-	<meta name="keywords" content="DogMar servicio para mascotas, galeria predio, galeria hotel, galeria guarderia, mascotas al ser Adoptadas, hospedaje mascotas, hospedaje perros, hospedaje gatos, mascotas rescatadas, mascotas Adopción, adopciones Feliz, mascotas jugando, mascotas atendidas, foto del hotel para mascotas, mascotas cuidadas, refugio mascota, refugio perros, refugio gatos, adopción de perros, adopción, adopción de gatos, adopción responsable, adiestramiento Canino, adiestramiento perros, adiestramiento gatos, conduta animal, guarderia canina, hotel para perros, hotel para gatos, guarderia canina zona norte, transporte mascotas, cuidados en guarderia">
-	
-	<link rel="stylesheet" href="../css/main.css"
+	<meta name="description"
+		content="DogMar Hospedaje y refugio para perros y gatos. Conoce nuestro predio y Guardería. Galeria de fotos. Mascotas Adoptadas">
+	<meta name="keywords"
+		content="DogMar servicio para mascotas, galeria predio, galeria hotel, galeria guarderia, mascotas al ser Adoptadas, hospedaje mascotas, hospedaje perros, hospedaje gatos, mascotas rescatadas, mascotas Adopción, adopciones Feliz, mascotas jugando, mascotas atendidas, foto del hotel para mascotas, mascotas cuidadas, refugio mascota, refugio perros, refugio gatos, adopción de perros, adopción, adopción de gatos, adopción responsable, adiestramiento Canino, adiestramiento perros, adiestramiento gatos, conduta animal, guarderia canina, hotel para perros, hotel para gatos, guarderia canina zona norte, transporte mascotas, cuidados en guarderia">
+
+	<link rel="stylesheet" href="../css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+	<script src="../js/main.js"></script>
 </head>
+
 <body>
-	
-		<div class="container-fluid grilla">
-			<header id="rt-header" class="row cabecera">
-				
-				<div class="flex">
-					<a class="logo" href="../index.html">
-						<img class="logo_img" src="../img/FullColor_1280x1024_300dpi-2-min.jpg" alt="logo" height="120px" width="200px" >
+
+	<div class="container-fluid grilla">
+		<header class="cabecera" id="rt-header">
+			<div class="flex">
+				<a class="logo" href="../index.html">
+					<img class="logo_img distorcion" src="../img/FullColor_1280x1024_300dpi-2-min.jpg" alt="logo"
+						height="120px" width="200px">
+				</a>
+				<a id="logo_nombre" href="../index.html">
+					DogMar
+				</a>
+			</div>
+			<div class="encabezado">
+				<ul class="nav nav-tabs encabezado" id="color">
+					<li role="presentation" class="encabezado"><a href="../index.html"><b>Inicio</b></a></li>
+					<li role="presentation" class="encabezado"><a href="./quienesomos.html"><b>Quienes Somos</b></a>
+					</li>
+					<li role="presentation" class="encabezado"><a href="./servicios.html"><b>Servicios</b></a></li>
+					<li role="presentation" class="encabezado active"><a href="./galeria.html"><b>Galeria</b></a></li>
+					<li role="presentation" class="encabezado"><a href="./contacto.html"><b>Contacto</b></a></li>
+				</ul>
+
+			</div>
+		</header>
+		<main class="cabecera" id="rt-main">
+			<div>
+				<h1><b>Galería</b></h1>
+			</div>
+
+			<div id="predio">
+				<h2><b>Galería Predio</b></h2>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div style="height: 75vh" class="carousel-item active velocidad">
+							<img src="../img/0003389544.jpg" alt="hombreConPerrosEnPileta"
+								class="d-block w-100 distorcion">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="titulo__Con__Img">En DogMar</h5>
+								<p class="parrafo__Con__Img">Nos esforzamos para brindar un servicio de alta calidad y a
+									la medida de sus necesidades.</p>
+							</div>
+						</div>
+						<div style="height: 75vh" class="carousel-item velocidad">
+							<img src="../img/2017-01-13da.jpg" alt="perrosSaltandoAlAgua"
+								class="d-block w-100 distorcion">
+						</div>
+						<div style="height: 75vh" class="carousel-item velocidad">
+							<img src="../img/Captura-de-pantalla-2019-05-07-a-las-11.50.12.png"
+								alt="selfieGrupoDePerros" class="d-block w-100 distorcion">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
 					</a>
-					<a id="logo_nombre" href="../index.html">
-						DogMar
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
 					</a>
 				</div>
-					<div class="encabezado">
-						<ul class="nav nav-tabs encabezado" id="color">
-						  <li role="presentation" class="encabezado"><a href="../index.html"><b>Inicio</b></a></li>
-						  <li role="presentation" class="encabezado"><a href="./quienesomos.html"><b>Quienes Somos</b></a></li>
-						  <li role="presentation" class="encabezado"><a href="./servicios.html"><b>Servicios</b></a></li>
-						  <li role="presentation" class="encabezado active"><a href="./galeria.html"><b>Galeria</b></a></li>
-						  <li role="presentation" class="encabezado"><a href="./contacto.html"><b>Contacto</b></a></li>
+			</div>
+
+
+			<div id="hotel">
+				<h2><b>Galería Hotel</b></h2>
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+					<div style="height: 75vh" class="carousel-inner">
+						<div class="carousel-item active velocidad">
+							<img src="../img/_mg_8407.jpg_140025018.jpg" alt="HombreLimpiandoPerro"
+								class="d-block w-100 distorcion">
+						</div>
+						<div style="height: 75vh" class="carousel-item velocidad">
+							<img src="../img/fichero_19428_20170317-min.jpg" alt="hombresRevisandoPerro"
+								class="d-block w-100 distorcion">
+						</div>
+						<div style="height: 75vh" class="carousel-item velocidad">
+							<img src="../img/LQHPDBDXXNGA7JIDMIDFTTLSRA-min.png" alt="mujerConPerrosJugando"
+								class="d-block w-100 distorcion">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="guarderia">
+				<h2><b>Galería Guardería</b></h2>
+				<div id="carouselExampleSlidesOnly1" class="carousel slide" data-ride="carousel">
+					<div style="height: 85vh" class="carousel-inner">
+						<div class="carousel-item active velocidad">
+							<img src="../img/1_Yfhf5WPZGpVirOI7jP5ySw-min.png" alt="perroConPelotaCorriendo"
+								class="d-block w-100 distorcion">
+						</div>
+						<div style="height: 85vh" class="carousel-item velocidad">
+							<img src="../img/1_H44PAEXKidrHUOz0k4T0Eg-min.png" alt="perroMordiendoPelota"
+								class="d-block w-100 distorcion">
+						</div>
+						<div style="height: 85vh" class="carousel-item velocidad">
+							<img src="../img/gato y perro durmiendo juntos-min.jpg" alt="perroYGatoDurmiendo"
+								class="d-block w-100 distorcion">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="adopcionesFeliz">
+				<h2><b>Mascotas al ser Adoptadas</b></h2>
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/zOTEdvy2Yt4" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<p>Las Mascotas mejoran mucho al ser adoptadas y al recibir mucho amor. En el video vemos el antes y el
+					despues de ser adoptadas.</p>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div id="pie">
+				<ul class="nav">
+					<li><a href="../index.html"><b>Inicio</b></a>
+						<ul>
+							<li><a href="./servicios.html#alojamiento">Hospedaje</a></li>
+							<li><a href="./servicios.html#refugio">Refugio</a></li>
+							<li><a href="./servicios.html#adopta">Adopción Reponsable</a></li>
+							<li><a href="./contacto.html#calificanos">Calificanos</a></li>
+							<li><a href="./servicios.html#adiestra">Adistramiento</a></li>
 						</ul>
-					
-					</div>
-			</header>
-			<main id="rt-main" class= "cuerpo">					
-				<div>
-					<h1><b>Galería</b></h1>
-				</div>
-					
-					<div id="predio">
-					<h2><b>Galería Predio</b></h2>
-					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					  <ol class="carousel-indicators">
-					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					  </ol>
-					  <div class="carousel-inner">
-					    <div style="height: 75vh" class="carousel-item active velocidad">
-					      <img src="../img/0003389544.jpg" alt="hombreConPerrosEnPileta" class="d-block w-100">
-					      <div class="carousel-caption d-none d-md-block">
-					        <h5 class="titulo__Con__Img">En DogMar</h5>
-					        <p class="parrafo__Con__Img">Nos esforzamos para brindar un servicio de alta calidad y a la medida de sus necesidades.</p>
-					      </div>
-					    </div>
-					    <div style="height: 75vh" class="carousel-item velocidad">
-					      <img src="../img/2017-01-13da.jpg" alt="perrosSaltandoAlAgua" class="d-block w-100">
-					    </div>
-					    <div style="height: 75vh" class="carousel-item velocidad">
-					      <img src="../img/Captura-de-pantalla-2019-05-07-a-las-11.50.12.png" alt="selfieGrupoDePerros" class="d-block w-100">
-					    </div>
-					  </div>
-					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
-					</div>
-					</div>			
-				
-						
-					<div id="hotel">
-					<h2><b>Galería Hotel</b></h2>
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-					  <div style="height: 85vh" class="carousel-inner">
-					    <div class="carousel-item active velocidad">
-					      <img src="../img/_mg_8407.jpg_140025018.jpg" alt="HombreLimpiandoPerro" class="d-block w-100">
-					    </div>
-					    <div style="height: 85vh" class="carousel-item velocidad">
-					      <img src="../img/fichero_19428_20170317-min.jpg" alt="hombresRevisandoPerro" class="d-block w-100">
-					    </div>
-					    <div style="height: 85vh" class="carousel-item velocidad">
-					      <img src="../img/LQHPDBDXXNGA7JIDMIDFTTLSRA-min.png" alt="mujerConPerrosJugando" class="d-block w-100">
-					    </div>
-					  </div>
-					</div>
-					</div>
-					<div id="guarderia">
-					<h2><b>Galería Guardería</b></h2>
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-					  <div style="height: 85vh" class="carousel-inner">
-					    <div class="carousel-item active velocidad">
-					      <img src="../img/1_Yfhf5WPZGpVirOI7jP5ySw-min.png" alt="perroConPelotaCorriendo" class="d-block w-100">
-					    </div>
-					    <div style="height: 85vh" class="carousel-item velocidad">
-					      <img src="../img/1_H44PAEXKidrHUOz0k4T0Eg-min.png" alt="perroMordiendoPelota" class="d-block w-100">
-					    </div>
-					    <div style="height: 85vh" class="carousel-item velocidad">
-					      <img src="../img/gato y perro durmiendo juntos-min.jpg" alt="perroYGatoDurmiendo" class="d-block w-100">
-					    </div>
-					  </div>
-					</div>
-				</div>
-				<div id="adopcionesFeliz">
-					<h2><b>Mascotas al ser Adoptadas</b></h2>
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/zOTEdvy2Yt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<p>Las Mascotas mejoran mucho al ser adoptadas y al recibir mucho amor. En el video vemos el antes y el despues de ser adoptadas.</p>
-				
-				</div>
-			
-			</main>
-		
-			<footer class="footer">
-				<div id="pie">
-					<ul class="nav">
-						<li><a href="../index.html"><b>Inicio</b></a>
-							<ul>
-								<li><a href="./servicios.html#alojamiento">Hospedaje</a></li>
-								<li><a href="./servicios.html#refugio">Refugio</a></li>
-								<li><a href="./servicios.html#adopta">Adopción Reponsable</a></li>
-								<li><a href="./contacto.html#formulario">Calificanos</a></li>
-								<li><a href="./servicios.html#adiestra">Adistramiento</a></li>
-							</ul>
-						</li>
-						<li><a href="./quienesomos.html"><b>Quienes Somos</b></a>
-							<ul>
-								<li><a href="./quienesomos.html#historia">Historia</a></li>
-								<li><a href="./quienesomos.html#queOfrecemos">Que Ofrecemos</a></li>
-								<li><a href="./quienesomos.html#valores">Nuestros Valores</a></li>
-								<li><a href="./quienesomos.html#staff">Staff</a></li>
-								<li><a href="./quienesomos.html#capacitaciones">Estudios y Capacitaciones</a></li>
-							</ul>
-						</li>
-						<li><a href="./views/servicios.html"><b>Servicios</b></a>
-								<ul>
-									<li><a href="./servicios.html#alojamiento">Hospedaje</a></li>
-									<li><a href="./servicios.html#refugio">Refugio</a></li>
-									<li><a href="./servicios.html#adopta">Adopción Responsable</a></li>
-									<li><a href="./servicios.html#adiestra">Adiestramieto Canino</a></li>
-									<li><a href="./servicios.html#requisitosSanitarios">Requisitos Sanitarios</a></li>
-									<li><a href="./servicios.html#menu">Conocer antes de hospedar</a></li>
-									<li><a href="./servicios.html#informacion">Información</a></li>
-									<li><a href="./servicios.html#menu2">Preguntas Frecuentes</a></li>
-									<li><a href="./contacto.html#formulario">Consultar Precio</a></li>
-								</ul>
-							</li>
-							<li><a href="./galeria.html"><b>Galeria</b></a>
-							<ul>
-								<li><a href="#predio">Predio</a></li>
-								<li><a href="#hotel">Hotel</a></li>
-								<li><a href="#guarderia">Guardería</a></li>
-								<li><a href="#adopcionesFeliz">Mascotas al ser Adoptadas</a></li>
-							</ul>
-							</li>
-							<li><a href="./contacto.html"><b>Contacto</b></a>
-								<ul>
-									<li><a href="./contacto.html">Ubicación</a></li>
-									<li><em><b>Celular: </b> 11 9999-9999</em></li>
-									<li><em><b>Mail: </b>canderichiardi@gmail.com</em></li>
-									<li><em><b>Dirección: </b>Dirección 9999</em></li>
+					</li>
+					<li><a href="./quienesomos.html"><b>Quienes Somos</b></a>
+						<ul>
+							<li><a href="./quienesomos.html#historia">Historia</a></li>
+							<li><a href="./quienesomos.html#que__Ofrecemos">Que Ofrecemos</a></li>
+							<li><a href="./quienesomos.html#valores">Nuestros Valores</a></li>
+							<li><a href="./quienesomos.html#staff">Staff</a></li>
+							<li><a href="./quienesomos.html#capacitaciones">Estudios y Capacitaciones</a></li>
 						</ul>
-					</ul>
-				</div>	
-				<div>
-					<a href="https://www.instagram.com/dogmar4/">
-						<img src="../img/pngtree-instagram-color-icon-png-image_3995406-min.jpg" alt="instagram" width="50px" height="50px">
-					</a>
-					</div>
-			</footer>
-		
-	 <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+					</li>
+					<li><a href="./views/servicios.html"><b>Servicios</b></a>
+						<ul>
+							<li><a href="./servicios.html#alojamiento">Hospedaje</a></li>
+							<li><a href="./servicios.html#refugio">Refugio</a></li>
+							<li><a href="./servicios.html#adopta">Adopción Responsable</a></li>
+							<li><a href="./servicios.html#adiestra">Adiestramieto Canino</a></li>
+							<li><a href="./servicios.html#requisitos__Sanitarios">Requisitos Sanitarios</a></li>
+							<li><a href="./servicios.html#menu">Conocer antes de hospedar</a></li>
+							<li><a href="./servicios.html#informacion">Información</a></li>
+							<li><a href="./servicios.html#menu2">Preguntas Frecuentes</a></li>
+							<li><a href="./contacto.html#formulario">Consultar Precio</a></li>
+						</ul>
+					</li>
+					<li><a href="./contacto.html"><b>Contacto</b></a>
+						<ul>
+							<li><a href="./contacto.html">Ubicación</a></li>
+							<li><em><b>Celular: </b> 11 9999-9999</em></li>
+							<li><em><b>Mail: </b>canderichiardi@gmail.com</em></li>
+							<li><em><b>Dirección: </b>Dirección 9999</em></li>
+						</ul>
+				</ul>
+			</div>
+			<div class="social-media-links">
+				<ul>
+					<li>
+						<!-- twitter -->
+						<a href="#">
+							<svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<!-- facebook -->
+						<a href="#">
+							<svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<!-- youtube -->
+						<a href="#">
+							<svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<!-- instagram -->
+						<a href="https://www.instagram.com/dogmar4/" target="_blank">
+							<svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z" />
+								<path class="st0"
+									d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z" />
+								<circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+								<path class="st0"
+									d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z" />
+								<path class="st0"
+									d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z" />
+								<circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+	<script src="./js/main.js"></script>
+</body>
+
 </html>
