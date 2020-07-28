@@ -16,6 +16,21 @@ $font:'crimson text';
 $col: 50%;
 $distance: 10px;
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+$rhino: #323b40;
+$teal: #0096a1;
+$tealMid: #0ebac7;
+$offWhite: #e9eaea;
+
+
+
+* {
+  box-sizing:border-box;
+}
+
+
+
 
 @mixin transformar($propiedad) {
 	-webkit-transform: $propiedad;
@@ -75,6 +90,7 @@ header {
 	overflow: hidden;
 	background-color: $bcgHeader;
 	margin-bottom:$distance;
+	margin-left: -15px;
 }
 
 #color li a {
@@ -171,10 +187,19 @@ header {
 
 
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
-	#rt-main {width: 99%;}
+	#rt-main {width: 100%;}
+	#carouselExampleIndicators, #carouselExampleSlidesOnly, #carouselExampleSlidesOnly1 {height: 70vh;}
  	body{min-width: 100%;}
 
 
+}
+
+@media only screen and (max-width: 668px), only screen and (max-device-width: 668px) {
+	#carouselExampleIndicators, #carouselExampleSlidesOnly, #carouselExampleSlidesOnly1 {height: 55vh;}
+}
+
+@media only screen and (max-width: 560px), only screen and (max-device-width: 560px) {
+	#carouselExampleIndicators, #carouselExampleSlidesOnly, #carouselExampleSlidesOnly1 {height: 50vh;}
 }
 
 @media (min-width: 768px) {	
@@ -256,6 +281,10 @@ main {
 	color: $colorNegro;
 }
 
+.distorcion {
+	object-fit: contain;
+}
+
 h1, h3 {
 	color: $colorNegro;
 }
@@ -295,6 +324,7 @@ h3 {
 
 #alojamiento {
 	width: 95%;
+	margin: auto;
 	display: grid;
 	grid-template-areas: 
 	"tituloAlojamiento "
@@ -305,10 +335,13 @@ h3 {
 #img__Alojamiento {
 	grid-area: imgAlojamiento;
 	margin: auto;
+	width: 100%;
 }
 
 #titulo__Alojamiento {
 	grid-area: tituloAlojamiento;
+	margin: auto;
+	width: 90%;
 }
 
 .titulo__Parrafo {
@@ -489,23 +522,26 @@ li label,
 .flex-outer li p {
   padding: $distance/1.24;
   font-weight: 300;
-  color: $colorNegro;
 }
 
 > li > label,
 li p {
   flex: 1 0 $distance*12;
   max-width: $distance*22;
+  color: $colorNegro;
 }
 
 li p {
-	margin: 0;
+	margin: 5px;
+	color: $colorNegro;
 }
   
 li input:not([type='radio']),
 li textarea {
 	padding: $distance/1.24;
 	border: none;
+	max-width: 220px;
+	margin-right: 5%;
 }
   
   
@@ -535,6 +571,8 @@ li {
 .flex-outer > li > label + *,
 .flex-inner {
   flex: 1 0 $distance*22;
+  max-width: 220px;
+  margin-right: 5%;
 }
 
 
@@ -568,6 +606,34 @@ textarea:focus {
 }
 #parrafo__Form1 {
 	display: contents;
+}
+
+.btn {
+	background-color: peachpuff;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $colorNegro;
+	text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card-body {
+	color: whitesmoke;
+}
+
+.dentro {
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $bcgMain;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
 }
 
 
@@ -625,48 +691,9 @@ li {
 
 .margenes2 {
 	text-align: $textCenter;
-}
-
-#adopta {
-	width: 95%;
-	display: grid;
-	grid-template-areas: 
-	"tituloAdopcion imgAdopcion"
-	"parrafoAdopcion imgAdopcion"
-	"parrafoDosAdopcion imgAdopcion" ;
-	grid-template-rows: 0.5fr 1fr; 
-	grid-template-columns: 65% 35%;
-	grid-column-gap: $distance;
-	
-}
-
-.img__Adopcion {
-	grid-area: imgAdopcion;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBorder;
-	margin-top: $distance*2;
-	margin-bottom: $distance*2;
-	width: 90%;
-}
-
-.titulo__Adopcion {
-	display: inline-table;
-	text-align: $textCenter;
-	grid-area: tituloAdopcion;
-	margin-top: $distance;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-.parrafo__Adopcion {
-	grid-area: parrafoAdopcion;
 	margin-top: 0px;
 }
 
-.parrafo__DosAdopcion {
-	grid-area: parrafoDosAdopcion;
-	margin-top: 0px;
-}
 
 .titulo__Con__Img {
 	text-align: $textCenter;
@@ -679,178 +706,30 @@ li {
 }
 
 .velocidad {
-transition: transform 3.3s ease-in-out,-webkit-transform .6s ease-in-out;
+transition: transform 3.3s ease-in-out,-webkit-transform .3s ease-in-out;
 }
 
-#adopta2 {
-	width: 95%;
-	display: grid;
-	grid-template-areas: 
-	"imgAdopcion2 parrafoAdopcion2"
-	"parrafoDosAdopcion2 parrafoDosAdopcion2";
-	grid-template-rows: 1fr 1fr; 
-	grid-template-columns:35% 65%;
-	grid-column-gap: $distance*3;
-}
-
-.img__Adopcion2 {
-	grid-area: imgAdopcion2;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
-	margin-top: $distance*2;
-	margin-bottom: $distance*2;
-	width: 90%;
-	margin-left: $distance*3;
-}
-
-.parrafo__Adopcion2 {
-	grid-area: parrafoAdopcion2;
-	margin-top: $distance*2;
-}
-
-.parrafo__Dos__Adopcion2 {
-	grid-area: parrafoDosAdopcion2;
-	margin-top: 0px;
-}
-
-#adiestra {
-	display: grid;
-	grid-template-areas: 
-	"tituloAdiestra imgAdiestra"
-	"parrafoAdiestra imgAdiestra";
-	grid-template-rows: 0.5fr 1fr; 
-	grid-template-columns: 65% 35%;
-	grid-column-gap: $distance*3;
-	
-}
-
-.img__Adiestra {
-	grid-area: imgAdiestra;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
-	margin-top: $distance*3;
-}
-
-.titulo__Adiestra {
-	display: inline-table;
-	text-align: $textCenter;
-	grid-area: tituloAdiestra;
-	margin-top: $distance;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-.parrafo__Adiestra {
-	grid-area: parrafoAdiestra;
-	margin-top: 0px;
-}
 
 #grilla__Requerimientos {
-	height: 30%;
+	margin: auto;
 	display: grid;
 	grid-template-areas: 
 	"perros gatos"
 	"perros gatos" ;
-	grid-template-rows: 1fr 1fr ; 
-	grid-template-columns: 55% 35%;
-	grid-column-gap: $distance*8;
+	grid-template-rows: 1fr 1fr; 
+	grid-column-gap: $distance*2;
 	
 }
 
 #perros {
 	grid-area: perros;
-	margin-left: $distance+5;
+	margin-left: $distance;
 }
 
 #gatos {
 	grid-area: gatos;
 }
 
-#importante {
-	margin-top: $distance;
-	width: 95%;
-	display: grid;
-	grid-template-areas: 
-	"imgImportante tituloImportante "
-	"imgImportante parrafoImportante "
-	"imgImportante otroParrafoImportante "
-	"otroTituloImportante otroTituloImportante" ;
-	grid-template-rows: 0.4fr 1fr 0.3fr 0.5fr; 
-	grid-template-columns: 35% 65% ;
-	grid-column-gap: $distance*3;
-}
-
-#img__Importante {
-	grid-area: imgImportante;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
-	margin: $distance;
-	margin-bottom: 0px;
-	width: 95%;
-}
-
-#titulo__Importante {
-	display: inline-table;
-	text-align: $textCenter;
-	grid-area: tituloImportante;
-	margin:10%;
-	margin-top: $distance;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-#parrafo__Importante {
-	grid-area: parrafoImportante;
-	margin-right: ($distance*7)+5;
-	margin-top: 0px;
-}
-#otro__Parrafo__Importante {
-	grid-area: otroParrafoImportante;
-	text-align: $textCenter;
-	width: 95%;
-	margin-bottom: 0px;
-	margin:$distance;
-	padding: 0px;
-}
-
-#otro__Titulo__Importante {
-	grid-area: otroTituloImportante;
-	width: 96%;
-}
-
-#menu {
-	width: 95%;
-	display: grid;
-	grid-template-areas: 
-	"tituloMenu tituloMenu"
-	"parrafoMenu imgMenu" ;
-	grid-template-columns: 60% 40%;
-	grid-column-gap: $distance*3;
-	
-}
-
-#img__Menu {
-	grid-area: imgMenu;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
-	width: 95%;
-}
-
-#titulo__Menu {
-	grid-area: tituloMenu;
-	margin-top: $distance;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-#parrafo__Menu {
-	grid-area: parrafoMenu;
-	font-size: 25px;
-	text-align: justify;
-	margin-top: ($distance/2);
-	margin-left: $distance+5;
-	padding: $distance/2 $distance;
-}
 
 .table__Container {
 	width: 99%;
@@ -936,78 +815,8 @@ table {
 	}
 }
 
-#informacion {
-	width: 99%;
-	display: grid;
-	grid-template-areas: 
-	"tituloInformacion tituloInformacion"
-	"imgInformacion parrafoInformacion" ;
-	grid-template-columns:40% 60%;
-	grid-row-gap: $distance;
-}
-
-#img__Informacion {
-	grid-area: imgInformacion;
-	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
-	margin-top: $distance/2;
-	margin-left: $distance;
-	margin-bottom: $distance*2;
-	width: 100%;
-}
-
-#titulo__Informacion {
-	grid-area: tituloInformacion;
-	margin-top: $distance;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-#parrafo__Informacion {
-	grid-area: parrafoInformacion;
-	text-align: justify;
-	width: 100%;
-	margin-top: $distance;
-	margin-left: $distance+5;
-	margin-bottom: $distance*2;
-	padding-right: ($distance*2)+5;
-}
-
-#barra__Menu,
-#barra__Menu2 {
-	display:flex;
-	flex-direction: column;
-	a {
-		text-decoration:none;
-		color:$colorBlanco;
-		padding: $distance $distance*2;
-		line-height:normal;
-		font-size: 20px;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease;
-	
-	
-		&:hover {
-			margin: auto;
-			background-color: $bcgNav;
-			border-radius:50px;
-	
-	}	}
-}
-
-nav a {
-	text-align: $textCenter;
-	padding: 0px;
-			
-	&:hover {
-		margin: auto;
-		background-color: $bcgNav;
-		border-radius:$distance*5;
-	}
-}
-
 #menu2 {
+	margin: auto;
 	width: 95%;
 	display: grid;
 	grid-template-areas: 
@@ -1021,11 +830,8 @@ nav a {
 #img__Menu2 {
 	grid-area: imgMenu2;
 	border-color: $colorBorder; 
-	box-shadow: 3px 3px 3px $colorBox;
+	box-shadow: 1px 1px 1px $colorBox;
 	margin-top: 0px;
-	margin-right: $distance*5;
-	margin-left: $distance*5;
-	margin-bottom: $distance*2;
 	width: 95%;
 }
 
@@ -1034,9 +840,21 @@ nav a {
 	text-align: $textCenter;
     width: 100%;
     margin-top: $distance/2;
-    margin-left: $distance+5;
-    padding-right: ($distance*2)+5;
+    
 }
+
+nav a {
+	text-align: $textCenter;
+	padding: 0px;
+			
+	&:hover {
+		margin: auto;
+		background-color: $bcgNav;
+		border-radius:$distance*5;
+	}
+}
+
+
 
 .tabla__Parrafo {
 	font-weight: normal;
@@ -1051,8 +869,77 @@ nav a {
 
 
 footer {
+	bottom: 0;
+	left: 0;
+	
+	right: 0;
+	div.social-media-links {
+		  background: $colorNegro;
+		  overflow: hidden;
+		  padding-bottom: 4px;
+		  text-align: center;
+		  ul {
+			  margin: 0;
+			  padding: 0;
+		  }
+		  li {
+			  display: inline;
+			  margin: 0;
+			  padding: 0;
+			  margin-right: 5px;
+			  margin-left: 5px;
+		  }
+		  a {
+			  border-bottom: 0px solid rgba(0,0,0,0.95);
+			  border-radius: 4px;
+			  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0), 0 6px 8px rgba(0,0,0,0), 0 24px 24px rgba(0,0,0,0), 0 36px 36px rgba(0,0,0,0), 0 64px 64px rgba(0,0,0,0), 0 64px 128px rgba(0,0,0,0), 0 120px 0 rgba(0,0,0,0), 0 86px 8px 6px rgba(0,0,0,0),;
+			  display: inline-block;
+			  height: 30px;
+			  padding: 20px;
+			  position: relative;
+			  transition: .2s ease-in;
+		width: 30px;
+			  svg {
+		  left: 20px;
+		  position: absolute;
+		  top: 20px;
+				  height: 30px;
+				  width: 30px;
+		  &.glow {
+			path, circle {
+			  fill: rgba(0,0,0,0);
+			}
+		  }
+				  path, circle {
+					  fill: $teal;
+					  transition: .2s ease-in;
+				  }
+			  }
+		  }
+  a:hover {
+			  transform: translateY(-4px);
+			  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.1), 0 6px 8px rgba(0,0,0,0.05), 0 24px 24px rgba(0,0,0,0.05), 0 36px 36px rgba(0,0,0,0.05), 0 64px 64px rgba(0,0,0,0.15), 0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px fadeout($tealMid, 75), 0 83px 4px 0px fadeout($tealMid, 5);
+		  }
+	  svg {
+		  &.glow {
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+			filter: blur(2px);
+			path, circle {
+			  fill: fadeout($tealMid, 40);
+			}
+		  }
+				  path, circle {
+					  fill: $tealMid;
+				  }
+			  }
+		  }
+	  }
+  
+  
+
+footer {
 	grid-area: footer;
-	background-color: $colorNegro;
+	background: $colorNegro;
 	margin-top: $distance;
 	text-align: justify;
 	margin-left: -15px;
@@ -1080,7 +967,7 @@ footer {
 		transition:all 500ms ease;
 	
 		&:hover {
-			background-color:#434343;
+			background-color:$teal;
 			border-radius: $distance*5;
 		}
 	}
@@ -1094,7 +981,7 @@ footer {
 }
 
 em {
-	background-color: $colorNegro;
+	background: $colorNegro;
 	color: $colorBlanco;
 	text-decoration:none;
 	padding: $distance/5;
@@ -1105,11 +992,3 @@ em {
 .nav li:hover > ul {
 	display:block;
 }
-			
-.instagram {
-	display: inline-flex;
-	margin: 2px auto;
-	box-shadow: 6px 6px 6px;
-	padding-bottom: 0px;
-}
-
